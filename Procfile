@@ -1,1 +1,1 @@
-web: gunicorn django_schafer.wsgi
+web: gunicorn dentistsite.wsgi
