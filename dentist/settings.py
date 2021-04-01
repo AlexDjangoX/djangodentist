@@ -20,7 +20,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', cast=bool, default=True)
 
-ALLOWED_HOSTS = ['alexdjangoblogapp.herokuapp.com']
+ALLOWED_HOSTS = ['https://alexdjangoxdentist.herokuapp.com']
 
 
 # Application definition
