@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Contact Dr AlexDjangoX{% endblock %}
+
+{% block meta_description %}Callback from AlexDjangoX{% endblock %}
+
+{% block content %}
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Callback Request Received</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Callback Request details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+ 	<div class="container">
+      <div class="row">
+        <div class="col-8">
+			<centre>
+				<h4>Your callback request details as follows</h4>
+				<p>Dear {{ your_name }}, thank you for contacting Dr AlexDjangoX at DENTO.</p> 
+				<p>We have registered your details as below, and will be contacting you as you have requested.</p>
+				<p>{{ your_name }}, at telephone number {{ your_phone }}, email address {{ your_email }}, will be contacted by the secretary to arrange a consultation at {{ your_time }}.</p>
+			</centre>
+		</div>	
+	</div>	
+</div>	
+
+   {% endblock %}
+
+
+
+
+
